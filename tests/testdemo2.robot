@@ -13,17 +13,17 @@ ${Shop_page_load}         css:.nav-link
 
 
 *** Test Cases ***
-#Validate UnSuccessful Login
-#    Fill the login Form    ${username}    ${invalid_password}
-#    Wait for element to appear    ${Error_message_login}
-#    Verify error message is correct
-#
-#
-#Validate cards display in the shopping page
-#    Fill the login form    ${username}    ${valid_password}
-#    Wait for element to appear    ${Shop_page_load}
-#    Verify Card titles in the Shop page
-#    Select the Card    Nokia Edge
+Validate UnSuccessful Login
+    Fill the login Form    ${username}    ${invalid_password}
+    Wait for element to appear    ${Error_message_login}
+    Verify error message is correct
+
+
+Validate cards display in the shopping page
+    Fill the login form    ${username}    ${valid_password}
+    Wait for element to appear    ${Shop_page_load}
+    Verify Card titles in the Shop page
+    Select the Card    Nokia Edge
 
 Log in with selected drop-down value
     Fill the login details and login page

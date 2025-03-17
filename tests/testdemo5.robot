@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   To validate the Login form
 Library     SeleniumLibrary
-Library    DataDriver    file=${CURDIR}resources/data.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=resources/data.csv    encoding=utf_8    dialect=unix
 Resource    resource.robot
 
 Test Setup    Open the browser with the Mortgage payment url
@@ -14,7 +14,7 @@ ${special_character}      %^&}test
 
 
 *** Test Cases ***
-Validate UnSuccessful Login    username    password
+Validate UnSuccessful Login
 
 *** Keywords ***
 Validate UnSuccessful Login
@@ -25,7 +25,7 @@ Validate UnSuccessful Login
     Verify error message is correct
 
 Fill the login form
-    [Arguments]    ${username}    ${password}
+    [Arguments]        ${username}        ${password}
     Wait Until Element Is Visible    id:username
     Wait Until Element Is Visible    id:password
     Input Text    id:username    ${username}

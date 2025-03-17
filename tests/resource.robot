@@ -10,6 +10,7 @@ ${invalid_user_name}    mitest
 ${invalid_password}    Test!234
 ${valid_password}    learning
 ${url}                 https://rahulshettyacademy.com/loginpagePractise/
+@{productslist}    Nokia Edge    Blackberry    iphone X    Samsung Note 8    
 *** Keywords ***
 Open the browser with the Mortgage payment url
     Open Browser    about:blank    chrome
