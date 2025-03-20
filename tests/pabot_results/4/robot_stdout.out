@@ -1,15 +1,18 @@
 ==============================================================================
 Tests                                                                         
 ==============================================================================
-Tests.Testdemo5 :: To validate the Login form                                 
+Tests.Testdemo6 :: To validate the Login form                                 
 ==============================================================================
-Validate login unsuccessfully with invalid credentials                | FAIL |
-Test cannot be empty.
+Validate UnSuccessful Login                                           | PASS |
 ------------------------------------------------------------------------------
-Tests.Testdemo5 :: To validate the Login form                         | FAIL |
-1 test, 0 passed, 1 failed
+Validate cards display in the shopping page                           | PASS |
+------------------------------------------------------------------------------
+Log in with selected drop-down value                                  | PASS |
+------------------------------------------------------------------------------
+Tests.Testdemo6 :: To validate the Login form                         | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
 Output:  /Users/mitran/pythonProject/RobotFramework/tests/pabot_results/4/output.xml

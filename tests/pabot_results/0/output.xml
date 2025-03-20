@@ -1,73 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.0 on darwin)" generated="2025-03-20T08:19:06.929988" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.0 on darwin)" generated="2025-03-20T08:27:00.235486" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/Users/mitran/pythonProject/RobotFramework/tests">
 <suite id="s1-s1" name="Testdemo1" source="/Users/mitran/pythonProject/RobotFramework/tests/testdemo1.robot">
 <test id="s1-s1-t1" name="Validate UnSuccesful Login" line="10">
 <kw name="open the browser with the Mortgage payment url">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-20T08:19:07.221407" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2025-03-20T08:27:00.538137" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-20T08:19:07.221097" elapsed="14.875279"/>
+<status status="PASS" start="2025-03-20T08:27:00.537807" elapsed="3.892912"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-03-20T08:19:22.115476" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<msg time="2025-03-20T08:27:04.431888" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
 <arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-03-20T08:19:22.111840" elapsed="2.375470"/>
+<status status="PASS" start="2025-03-20T08:27:04.431429" elapsed="2.954171"/>
 </kw>
-<status status="PASS" start="2025-03-20T08:19:07.220036" elapsed="17.267517"/>
+<status status="PASS" start="2025-03-20T08:27:00.536714" elapsed="6.849144"/>
 </kw>
 <kw name="Fill the login form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-20T08:27:07.396827" elapsed="0.054049"/>
+</kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T08:19:24.490658" level="INFO">Typing text 'mimitesttest' into text field 'id:username'.</msg>
-<msg time="2025-03-20T08:19:26.214472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-20T08:19:26.214822" level="FAIL">Element with locator 'id:username' not found.</msg>
+<msg time="2025-03-20T08:27:07.451383" level="INFO">Typing text 'mimitesttest' into text field 'id:username'.</msg>
 <arg>id:username</arg>
 <arg>${user_name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-03-20T08:19:24.489367" elapsed="1.736242">Element with locator 'id:username' not found.</status>
+<status status="PASS" start="2025-03-20T08:27:07.451091" elapsed="0.356257"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:27:07.810091" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-03-20T08:27:07.848504" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-20T08:19:26.226380" elapsed="0.000494"/>
+<status status="PASS" start="2025-03-20T08:27:07.808736" elapsed="0.102944"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:27:07.912127" level="INFO">Clicking button 'id:signInBtn'.</msg>
 <arg>id:signInBtn</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-20T08:19:26.227127" elapsed="0.000094"/>
+<status status="PASS" start="2025-03-20T08:27:07.911900" elapsed="0.178143"/>
 </kw>
-<status status="FAIL" start="2025-03-20T08:19:24.488880" elapsed="1.738624">Element with locator 'id:username' not found.</status>
+<status status="PASS" start="2025-03-20T08:27:07.392065" elapsed="0.698292"/>
 </kw>
 <kw name="wait until it checks and display error message">
-<status status="NOT RUN" start="2025-03-20T08:19:26.228854" elapsed="0.004467"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Error_message_login}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-20T08:27:08.091913" elapsed="2.192000"/>
+</kw>
+<status status="PASS" start="2025-03-20T08:27:08.090705" elapsed="2.193326"/>
 </kw>
 <kw name="verify error message is correct">
-<status status="NOT RUN" start="2025-03-20T08:19:26.233657" elapsed="0.000204"/>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:27:10.284658" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<arg>${Error_message_login}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-03-20T08:27:10.284458" elapsed="0.014318"/>
+</kw>
+<status status="PASS" start="2025-03-20T08:27:10.284181" elapsed="0.014699"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-20T08:19:26.234573" elapsed="0.241809"/>
+<status status="PASS" start="2025-03-20T08:27:10.299062" elapsed="0.081992"/>
 </kw>
-<status status="FAIL" start="2025-03-20T08:19:07.219222" elapsed="19.257320">Element with locator 'id:username' not found.</status>
+<status status="PASS" start="2025-03-20T08:27:00.535713" elapsed="9.845433"/>
 </test>
 <doc>To validate the Login form</doc>
-<status status="FAIL" start="2025-03-20T08:19:06.975739" elapsed="19.503735"/>
+<status status="PASS" start="2025-03-20T08:27:00.273873" elapsed="10.107693"/>
 </suite>
-<status status="FAIL" start="2025-03-20T08:19:06.942446" elapsed="19.538759"/>
+<status status="PASS" start="2025-03-20T08:27:00.247002" elapsed="10.134968"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="Testdemo1" id="s1-s1" pass="0" fail="1" skip="0">Tests.Testdemo1</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Testdemo1" id="s1-s1" pass="1" fail="0" skip="0">Tests.Testdemo1</stat>
 </suite>
 </statistics>
 <errors>

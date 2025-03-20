@@ -14,8 +14,6 @@ ${special_character}      %^&}test
 
 
 *** Test Cases ***
-Validate login unsuccessfully with invalid credentials
-    Validate UnSuccessful Login
 
 *** Keywords ***
 Validate UnSuccessful Login

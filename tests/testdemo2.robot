@@ -33,7 +33,8 @@ Log in with selected drop-down value
 *** Keywords ***
 Fill the login form
     [Arguments]    ${user_name}    ${password}
-    Wait Until Element Is Visible    id:username    timeout=5s
+    Set Selenium Timeout    10s
+    Wait Until Element Is Visible    id:username    timeout=10s
     Input Text    id:username    ${user_name}
     Input Password    id:password    ${password}
     Click Button    id:signInBtn

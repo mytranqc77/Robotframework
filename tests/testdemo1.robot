@@ -19,9 +19,11 @@ open the browser with the Mortgage payment url
     Go To    https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the login form
+    Wait Until Element Is Visible    id:username    5s
     Input Text    id:username    ${user_name}
     Input Password    id:password    ${password}
     Click Button    id:signInBtn
+    
 wait until it checks and display error message
     Wait Until Element Is Visible    ${Error_message_login}    timeout=5s
 
