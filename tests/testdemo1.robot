@@ -15,7 +15,7 @@ Validate UnSuccesful Login
 
 *** Keywords ***
 open the browser with the Mortgage payment url
-    Open Browser    Chrome
+    Open Browser    about:blank    chrome
     Go To    https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the login form

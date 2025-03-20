@@ -2,7 +2,7 @@
 Documentation   To validate the Login form
 Library     SeleniumLibrary
 Library    DataDriver    file=resources/data.csv    encoding=utf_8    dialect=unix
-Resource    resource.robot
+Resource    ../PageObjects/generic.robot
 
 Test Setup    Open the browser with the Mortgage payment url
 Test Template    Validate UnSuccessful Login
@@ -14,7 +14,8 @@ ${special_character}      %^&}test
 
 
 *** Test Cases ***
-Validate UnSuccessful Login
+Validate login unsuccessfully with invalid credentials
+    Validate UnSuccessful Login
 
 *** Keywords ***
 Validate UnSuccessful Login

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.0 on darwin)" generated="2025-03-20T08:19:06.929988" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/mitran/pythonProject/RobotFramework/tests">
+<suite id="s1-s1" name="Testdemo1" source="/Users/mitran/pythonProject/RobotFramework/tests/testdemo1.robot">
+<test id="s1-s1-t1" name="Validate UnSuccesful Login" line="10">
+<kw name="open the browser with the Mortgage payment url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:19:07.221407" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-20T08:19:07.221097" elapsed="14.875279"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:19:22.115476" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-20T08:19:22.111840" elapsed="2.375470"/>
+</kw>
+<status status="PASS" start="2025-03-20T08:19:07.220036" elapsed="17.267517"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-20T08:19:24.490658" level="INFO">Typing text 'mimitesttest' into text field 'id:username'.</msg>
+<msg time="2025-03-20T08:19:26.214472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-20T08:19:26.214822" level="FAIL">Element with locator 'id:username' not found.</msg>
+<arg>id:username</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-20T08:19:24.489367" elapsed="1.736242">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-20T08:19:26.226380" elapsed="0.000494"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-20T08:19:26.227127" elapsed="0.000094"/>
+</kw>
+<status status="FAIL" start="2025-03-20T08:19:24.488880" elapsed="1.738624">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="wait until it checks and display error message">
+<status status="NOT RUN" start="2025-03-20T08:19:26.228854" elapsed="0.004467"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" start="2025-03-20T08:19:26.233657" elapsed="0.000204"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-20T08:19:26.234573" elapsed="0.241809"/>
+</kw>
+<status status="FAIL" start="2025-03-20T08:19:07.219222" elapsed="19.257320">Element with locator 'id:username' not found.</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" start="2025-03-20T08:19:06.975739" elapsed="19.503735"/>
+</suite>
+<status status="FAIL" start="2025-03-20T08:19:06.942446" elapsed="19.538759"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Testdemo1" id="s1-s1" pass="0" fail="1" skip="0">Tests.Testdemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation   To validate the Login form
 Library     SeleniumLibrary
-Resource    resource.robot
+Resource    ../PageObjects/generic.robot
 Test Setup    Open the browser with the Mortgage payment url
 Test Template    Validate UnSuccessful Login
 Test Teardown    Close Browser

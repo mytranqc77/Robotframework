@@ -1,0 +1,5 @@
+[ ERROR ] [ DataDriver ] Error in robot file:
+  File "/Users/mitran/pythonProject/RobotFramework/tests/testdemo5.robot", line 0
+[ ERROR ] In source file:
+  File "resources/data.csv", line 0
+[ ERROR ] Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.
