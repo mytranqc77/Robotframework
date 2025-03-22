@@ -20,6 +20,7 @@ ${country_name}    India
 
 *** Test Cases ***
 Log in and add product to card:
+    [Tags]    E2E
     LandingPage.Fill the login details and login page
     ShopPage.Wait for element to appear    ${Shop_page_load}
     ShopPage.Verify Card titles in the Shop page
